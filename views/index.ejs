@@ -1,0 +1,46 @@
+
+
+<%- include("partials/header.ejs") %>
+
+<body>
+    <div class="A1">
+       <div class="A2">
+            <% const date = new Date(); %>
+            <% const fomattedDate = date.toLocaleDateString("en-US", {dateStyle: "full"}); %>
+            <div class="A3"><h1 class="A3-1"><%= fomattedDate %></h1></div>
+            
+            <%- include("partials/botton1.ejs") %>
+
+            <div id="myList" class="A5 ">
+                <% listDayTodo.forEach(function(item, index) { %>
+                    <form action="/delete" method="post">
+                       <div class="A5X">
+                            <input type="checkbox" onchange="this.form.submit()" name="Checkbox2" value="<%=item._id%>" style="display: none;" id="taskCheckbox<%= index %>" onclick="toggleStrikeThrough1(this)">
+                            <label for="taskCheckbox<%= index %>"><%= item.name %></label>
+                       </div> 
+                    </form>
+                    
+                <% }); %>
+                </div>
+            
+            <form class="botton-add" action="/submit1" method="POST">
+                <input id="todo" class="A5XA1" type="text" name="TodayDaylsit" placeholder="Enter item text">
+                <input id="addToDo" action="/submit1" method="POST" class="A6 button-1" type="submit" value="Add Item">
+            </form>
+
+       </div>
+    </div>
+    <!--footer-->
+    <%- include("partials/footer.ejs") %>    
+    <script>
+        function toggleStrikeThrough1(checkbox) {
+            const label = checkbox.nextElementSibling; // Get the label next to the checkbox
+            if (checkbox.checked) {
+                label.style.textDecoration = "line-through";
+            } else {
+                label.style.textDecoration = "none";
+            }
+        }
+    </script>
+</body>
+</html>

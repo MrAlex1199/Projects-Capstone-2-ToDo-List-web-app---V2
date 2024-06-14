@@ -1,0 +1,175 @@
+body {background: #8B7373;font-family: 'Love Ya Like A Sister', cursive;}
+button {font-family: 'Love Ya Like A Sister', cursive;}
+form.hide-submit input[type="submit"] { display: none;}
+a:link { text-decoration: none; }
+
+#add-list {
+   font-size: large;
+   font-weight: bold;
+   padding: 10px;
+   color: #dadada;
+}
+
+input {
+   text-align: center;
+   font-family: 'Love Ya Like A Sister', cursive;
+   font-size: 1.5rem;
+}
+
+input::placeholder {
+   font-family: 'Love Ya Like A Sister', cursive;
+   text-align: center;
+   font-size: 1.5rem;
+}
+
+ .A1 {
+    background: #D9D9D9;
+    min-height: 90vh;
+    margin: 20px 50px 10px 50px;
+    border-radius: 10px;
+ }
+
+ .A2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+ }
+
+ .A3 {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #8B7373;
+    color: #dadada;
+    width: 450px;
+ }
+
+ .A3-1 {padding: 10px;}
+ .A4 {display: flex;}
+
+ .button-1:active {
+   background-color: #3e8e41;
+   box-shadow: 0 5px #666;
+   transform: translateY(4px);
+ }
+ .button-1 {
+   background-color: transparent;
+   border: 2px solid #242424;
+   border-radius: 50px;
+   -webkit-transition: all .15s ease-in-out;
+   transition: all .15s ease-in-out;
+ }
+ .button-1:hover {
+   box-shadow: 0 0 10px 0 #D9D9D9 inset, 0 0 20px 2px #D9D9D9;
+   border: 2px solid #242424;
+ }
+
+ .A4X {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    padding: 0px;
+    width: 125px;
+    height: 60px;
+    border-radius: 15px;
+    background: #835959;
+    color: #dadada;
+ }
+
+ .SVGX {
+   margin-right: 10px;
+ }
+
+ .A5 {
+    align-items: center;
+    border-radius: 10px;
+    background: #8B7373;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 450px;
+    padding: 20px 40px 20px;
+    height: auto;
+    min-height: 50px;
+ }
+
+ .A5X {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 440px;
+    height: 67px;
+    border-radius: 15px;
+    background: #D9D9D9;
+    color: #383838;
+    font-size: 1.5rem;
+ }
+
+ .A5XA {
+   align-items: center;
+   border-radius: 10px;
+   background: #8B7373;
+   display: flex;
+   flex-direction: column;
+   margin: 10px;
+   padding: 10px;
+   width: 500px;
+   height: auto;
+}
+
+ .A5XA1 {
+   margin: 10px;
+   width: 441px;
+   height: 67px;
+   border-radius: 15px;
+   background: #D9D9D9;
+}
+
+ .A6 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    border-radius: 10px;
+    background: #8B7373;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 300px;
+    height: 56px;
+    font-size: 1.5rem;
+    font-weight: bold;
+ }
+
+ .botton-add {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ #footer {
+    text-align: center;
+    color: #463b3b;
+ }
+
+ @media screen and (max-width: 600px) {
+
+   .A5 {
+      width: 300px;
+   }
+   
+   .A5X {
+       width: 250px;
+       font-size: 1.5rem;
+   }
+
+   .A5XA1 {
+       width: 250px;
+       font-size: 1.5rem;
+   }
+}
+
+ 
