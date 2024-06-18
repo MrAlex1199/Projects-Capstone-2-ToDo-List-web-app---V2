@@ -2,6 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import _ from 'lodash';
+import 'dotenv/config'
 
 const app = express();
 const port = 3000;
@@ -11,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // mongoose.connect("mongodb://127.0.0.1:27017/todolistDB", { useNewUrlParser: true });
 
-const atlasConnectionString = "mongodb+srv://ZZ:ZZ1ZZ@clusterzero.jvgkprk.mongodb.net/todolistDB";
+const atlasConnectionString = process.env.DATABASELINK;
 
 mongoose.connect(atlasConnectionString, { useNewUrlParser: true });
 
